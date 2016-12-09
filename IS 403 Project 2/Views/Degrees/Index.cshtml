@@ -1,0 +1,76 @@
+﻿@model IEnumerable<IS_403_Project_2.Models.Degree>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.degreeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.degreeCoordinator)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coordinatorTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coordinatorOfficeAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phdEducation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mastersEducation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bachelorsEducation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.picture)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.degreeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.degreeCoordinator)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coordinatorTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coordinatorOfficeAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phdEducation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mastersEducation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bachelorsEducation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.picture)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.degreeID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.degreeID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.degreeID })
+        </td>
+    </tr>
+}
+
+</table>

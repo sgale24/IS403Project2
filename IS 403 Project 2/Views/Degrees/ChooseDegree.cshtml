@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "ChooseDegree";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ChooseDegree</h2>
+
+<div class="jumbotron">
+    <div class="jumbotron-content">
+        <h1>Choose your degree</h1>
+    </div>
+    <div class="container-fluid degreebtnposition">
+        <div class="row">
+            <a class="col-md-3 col-md-offset-3" href='@Url.Action("Degree", "Degrees", new { id = 1 })'>
+                <btn class="btn btn-default degreebtn">BSIS</btn>
+            </a>
+            <a class="col-md-3 " href='@Url.Action("Degree", "Degrees", new { id = 2 })'>
+                <btn class="btn btn-default degreebtn">MISM</btn>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+

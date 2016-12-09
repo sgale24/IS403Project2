@@ -1,0 +1,83 @@
+﻿@model IS_403_Project_2.Models.Degree
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Degree</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.degreeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.degreeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.degreeCoordinator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.degreeCoordinator)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coordinatorTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coordinatorTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coordinatorOfficeAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coordinatorOfficeAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phdEducation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phdEducation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mastersEducation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mastersEducation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bachelorsEducation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bachelorsEducation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.picture)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.degreeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

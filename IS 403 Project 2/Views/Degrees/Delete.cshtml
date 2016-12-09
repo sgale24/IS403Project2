@@ -1,0 +1,89 @@
+﻿@model IS_403_Project_2.Models.Degree
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Degree</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.degreeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.degreeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.degreeCoordinator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.degreeCoordinator)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coordinatorTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coordinatorTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coordinatorOfficeAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coordinatorOfficeAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phdEducation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phdEducation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mastersEducation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mastersEducation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bachelorsEducation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bachelorsEducation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.picture)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

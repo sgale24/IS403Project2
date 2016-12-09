@@ -1,0 +1,274 @@
+﻿
+.addButton p{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+   
+}
+
+
+.back {
+    background-color: blue;
+    margin-top: 20px;
+}
+
+.addButton {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: #4A90E2;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+    border-radius: 40px;
+    height: 80px;
+    width: 80px;
+    
+
+}
+
+.backcolor{
+    
+}
+.tile {
+    margin-top: 30px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    box-shadow: 4px 2px 16px 10px rgba(0,0,0,0.10);
+
+}
+
+.profileImage {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.tile p {
+    font-family: 'Avenir';
+    font-size: 14px;
+}
+
+.tile h1 {
+    font-family: 'Avenir';
+    font-size: 24px;
+}
+
+.tile h3 {
+    margin: 0px;
+    font-family: 'Avenir';
+    font-size: 12px;
+}
+
+.eventText {
+    margin: 30px;
+}
+
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-bottom: 20px;
+}
+
+.row {
+    text-align: center;
+    padding: 25px;
+}
+
+.bg-dark{
+    background-color: #0a376a;
+    color: white;
+    text-align: center;
+    height: 150px;
+    padding: 25px;
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.full {
+    background-color: #FBFBFB;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding: 15px;
+}
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.jumbotron{
+    margin-bottom: 0px;
+    background-image: url(../Images/header5.jpeg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 600px;
+    position: relative;
+}
+
+.jumbotron-content{
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+.questionForm{
+    border: thin;
+    border-color: blanchedalmond;
+}
+
+#profpanel{
+    width: 100%;
+}
+
+.panel-heading{
+    font-size: x-large;
+}
+
+.navbar-default {
+  background-color: #001948;
+  border-color: #0a376a;
+}
+.navbar-default .navbar-brand {
+  color: #d1e4f6;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #d1e4f6;
+}
+.navbar-default .navbar-text {
+  color: #d1e4f6;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #d1e4f6;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #d1e4f6;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #001948;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #d1e4f6;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #d1e4f6;
+  background-color: #0a376a;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #0a376a;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #d1e4f6;
+  background-color: #0a376a;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #d1e4f6;
+  background-color: #0a376a;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #d1e4f6;
+  background-color: #0a376a;
+}
+.navbar-default .navbar-toggle {
+  border-color: #0a376a;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #0a376a;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #d1e4f6;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #d1e4f6;
+}
+.navbar-default .navbar-link {
+  color: #d1e4f6;
+}
+.navbar-default .navbar-link:hover {
+  color: #d1e4f6;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #d1e4f6;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #d1e4f6;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #d1e4f6;
+    background-color: #0a376a;
+  }
+
+}
+
+.degreebtnposition{
+   position: relative;
+   top: 65%;
+}
+
+.degreebtn{
+    background-color: #0a376a;
+    color: white;
+    border: none;
+    padding: 25px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.questionHeading{
+    text-align: left;
+}
+
+
+.btn btn-default {
+    padding: 30px;
+}
+
+.professor{
+    display: block;
+    align-content: center;
+    width: 100%;
+
+}

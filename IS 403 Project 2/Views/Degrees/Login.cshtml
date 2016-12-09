@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+<h2>Login</h2>
+<p>
+    @Html.ActionLink("Register", "Create", "Users", routeValues: null, htmlAttributes: new { id = "registerLink" })
+</p>
+@using (Html.BeginForm("Login", "Degrees", FormMethod.Post))
+{
+    <label for="inputEmail">Email address</label>
+    @Html.TextBox("Email address")
+    <label for="inputPassword">Password</label>
+    @Html.Password("Password")
+    <button type="submit">Login</button>
+}

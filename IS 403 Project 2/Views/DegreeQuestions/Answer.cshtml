@@ -1,0 +1,48 @@
+﻿@model IS_403_Project_2.Models.DegreeQuestion
+
+@{
+    ViewBag.Title = "Answer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Answer</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Answer A Question</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.degreeQuestionID)
+        @Html.HiddenFor(model => model.degreeID)
+        @Html.HiddenFor(model => model.userID)
+        @Html.HiddenFor(model => model.question)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.question, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.question, new { htmlAttributes = new { @class = "form-control" } })
+                
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.answer, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.answer, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.answer, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "FAQ", new { id = @Html.DisplayFor(m => m.degreeID) })
+</div>

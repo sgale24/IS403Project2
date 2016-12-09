@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Landing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="jumbotron">
+    <div class="jumbotron-content">
+        <h1>Explore Information Systems</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row bg-dark" style="padding-left: 5px;">
+        <h4>Find Out More Below</h4>
+        <a class="col-md-2 col-md-offset-3" href='@Url.Action("ChooseDegree", "Degrees")'>
+            <btn class="btn btn-default">Degrees</btn>
+        </a>
+        <a class="col-md-2" href='@Url.Action("About", "Home")'>
+            <btn class="btn btn-default">About Us</btn>
+        </a>
+        <a class="col-md-2" href='@Url.Action("Contact", "Home")'>
+            <btn class="btn btn-default">Contact</btn>
+        </a>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="background-color: lightgray; color: dimgray">
+        <div class="col-md-8">
+            <h2>What Prerequisites are required for Information Systems?</h2>
+        </div>
+        <div class="col-md-4">
+            <a href="https://marriottschool.byu.edu/bsis/admission/prerequisites"><img src="~/Images/BYUlogo.png" /></a>
+        </div>
+    </div>
+    <div class="row bg-dark" style="height: 400px">
+        <div class="col-md-5">
+            <h2>What kind of careers are there for women in IS?</h2>
+        </div>
+        <div class="col-md-7">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DxGv16So8yo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

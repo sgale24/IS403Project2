@@ -1,0 +1,43 @@
+﻿@model IS_403_Project_2.Models.Degree
+
+@{
+    ViewBag.Title = "Degree";
+}
+
+<h2>@Html.DisplayFor(m=>m.degreeName)</h2>
+
+<div class="row">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href='@Url.Action("Index", "Home")'>Home</a></li>
+            <li class="breadcrumb-item"><a href='@Url.Action("ChooseDegree", "Degrees")'>Choose Degree</a></li>
+            <li class="breadcrumb-item active">@Html.DisplayFor(m => m.degreeName)</li>
+        </ol>
+    <div class="col-sm-3 col-sm-offset-1">
+        <div class="panel panel-default" id="profpanel">
+            <div class="panel-heading">Coordinator</div>
+            <div class="panel-body">
+                <h3>@Html.DisplayFor(m => m.coordinatorTitle) @Html.DisplayFor(m => m.degreeCoordinator)</h3>
+                <h4></h4>
+                <img src="@Html.DisplayFor(m=>m.picture)" class="img-responsive professor" />
+                <br /><br />
+                <p><strong>Office:</strong> @Html.DisplayFor(m => m.coordinatorOfficeAddress)</p>
+                <br />
+                <!--<ul style="list-style: none;">-->
+                <p>@Html.DisplayFor(m => m.phdEducation)</p>
+                <p>@Html.DisplayFor(m => m.mastersEducation)</p>
+                <p>@Html.DisplayFor(m => m.bachelorsEducation)</p>
+                <!-- </ul>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-8">
+        <div class="panel panel-default" id="profpanel">
+            <div class="panel-heading">@Html.DisplayFor(m => m.degreeName) FAQ's</div>
+            <div class="panel-body">
+                <btn class="btn"><a href='@Url.Action("FAQ", "DegreeQuestions", new { id = @Html.DisplayFor(m=>m.degreeID) })'>Questions</a></btn>
+            </div>
+        </div>
+    </div>
+</div>
+<footer></footer>
